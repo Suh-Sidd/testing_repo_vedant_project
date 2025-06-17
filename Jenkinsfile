@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        AWS_DEFAULT_REGION = "us-east-1"
+        AWS_DEFAULT_REGION = "us-west-2"
     }
 
     stages {
@@ -15,7 +15,7 @@ pipeline {
         stage('Build Image') {
             steps {
                 script {
-                    sh 'docker build -t vedant120/react-app:v4 .'
+                    sh 'docker build -t suhsidd/react-app:v4 .'
                 }
             }
         }
@@ -29,7 +29,7 @@ pipeline {
 
         stage('Push') {
             steps {
-                sh 'docker push vedant120/react-app:v4'
+                sh 'docker push suhsidd/react-app:v4'
             }
         }
 
