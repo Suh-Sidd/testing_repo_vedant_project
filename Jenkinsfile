@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout Source') {
             steps {
-                git branch: 'e2e_project', url: 'https://github.com/vedantsharmascaler/testing_repo.git'
+                git branch: 'e2e_project', url: 'https://github.com/Suh-Sidd/testing_repo_vedant_project.git'
             }
         }
 
